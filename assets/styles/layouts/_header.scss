@@ -1,0 +1,19 @@
+.navbar-header {
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+}
+
+.navbar-default {
+  text-align: center;
+}
+
+.navbar-nav>li>a {
+    text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar-brand {
+    float: none;
+  }
+}
