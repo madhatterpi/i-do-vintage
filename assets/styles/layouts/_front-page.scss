@@ -1,0 +1,113 @@
+.hero {
+  max-height: 300px;
+  position: relative;
+  text-align: center;
+
+  img {
+    opacity: 0.6;
+    width: 100%;
+    height: 300px;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #46774F;
+    font-size: 20px;
+    width: 100%;
+    p {
+      margin: 0 0 2px;
+    }
+  }
+}
+
+.cups {
+  p {
+    font-size: 16px;
+    margin: 0 0 20px;
+  }
+  .flexbox-cups {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 122px;
+      height: 91px;
+    }
+  }
+}
+
+.info-columns {
+  .thumbnail {
+    box-shadow: none;
+    border: none;
+    img {
+      height: 275px;
+      width: 100%;
+    }
+  }
+}
+
+.caption {
+  margin: 20px 20px 45px 20px;
+  h2 {
+    font-size: 22px;
+  }
+  p {
+    margin: 10px 15px 35px;
+    color: #575757;
+    line-height: 1.7;
+  }
+}
+
+.testamonial {
+  background-image: url("http://localhost/idovintage/wp-content/uploads/2017/04/quote-background-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  height: 180px;
+  position: relative;
+}
+
+.testamonial-text {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.testamonial-name {
+  font-size: 12px;
+}
+
+.testamonial-background {
+  background-color: #FCC9C9;
+  height: 300px;
+}
+
+@media only screen and (min-width: 650px) {
+  .info-columns .thumbnail img {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  .hero-text {
+    top: 60%;
+    left: 80%;
+    transform: translateX(-75%) translateY(-75%);
+    width: 280px;
+    font-size: 22px;
+  }
+
+  .caption {
+    margin: 20px 0 45px;
+    p {
+      margin: 10px 15px 35px;
+    }
+  }
+
+}
