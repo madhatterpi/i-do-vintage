@@ -2,12 +2,8 @@
   // For use with Sagextras (https://github.com/storm2k/sagextras)
 ?>
 
-<header class="banner navbar navbar-default center navbar-static-top" role="banner">
+<header class="banner navbar navbar-default navbar-static-top" role="banner">
   <div class="container">
-    <row>
-      <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-      <p>Oxford based vintage china hire</p>
-    </row>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only"><?= __('Toggle navigation', 'sage'); ?></span>
@@ -15,7 +11,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-
+      <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">

@@ -1,12 +1,11 @@
 .hero {
-  max-height: 300px;
   position: relative;
   text-align: center;
-
+  overflow: hidden;
   img {
-    opacity: 0.6;
+    opacity: 0.8;
     width: 100%;
-    height: 300px;
+    height: auto;
   }
 
   .hero-text {
@@ -15,7 +14,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     color: #46774F;
-    font-size: 20px;
+    font-size: 5.4vw;
     width: 100%;
     p {
       margin: 0 0 2px;
@@ -24,41 +23,82 @@
 }
 
 .cups {
-  p {
-    font-size: 16px;
-    margin: 0 0 20px;
-  }
   .flexbox-cups {
     display: flex;
     justify-content: center;
+    width: 95%;
+    div {
+      flex: auto;
+      width: 100%;
+      margin: .5vw;
+    }
     img {
-      width: 122px;
-      height: 91px;
+      width: 100%;
+      height: auto;
     }
   }
 }
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.section-header {
+  font-size: 16px;
+}
+
+.info-header {
+  padding-top: 40px;
+  margin: 0 0 35px;
+}
+
+.info-columns-header {
+  text-align: center;
+  display: none;
+}
+
+.info-row-padding {
+  padding-top: 35px;
+}
+
+/* .info-column-max-width {
+  max-width: 400px;
+} */
 
 .info-columns {
   .thumbnail {
     box-shadow: none;
     border: none;
     img {
-      height: 275px;
+      height: auto;
       width: 100%;
+      opacity: 0.9;
     }
   }
 }
 
 .caption {
-  margin: 20px 20px 45px 20px;
+  margin: 30px 20px 45px;
   h2 {
     font-size: 22px;
   }
   p {
-    margin: 10px 15px 35px;
+    margin: 15px 15px 35px;
     color: #575757;
     line-height: 1.7;
   }
+}
+
+.thumbnail, .wp-caption {
+    display: block;
+    padding: 0;
+    margin-bottom: 20px;
+    line-height: 1.428571429;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: border .2s ease-in-out;
 }
 
 .testamonial {
@@ -88,26 +128,98 @@
   height: 300px;
 }
 
-@media only screen and (min-width: 650px) {
+.break {
+  background-image: url("http://localhost/idovintage/wp-content/uploads/2017/04/4Asset-1-80.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  height: 50px;
+}
+
+
+/* === Media Queries === */
+
+
+@media only screen and (min-width: 640px) {
+  .hero {
+    .hero-text {
+      top: 60%;
+      left: 80%;
+      transform: translateX(-75%) translateY(-75%);
+      width: 36%;
+      font-size: 2.8vw;
+    }
+  }
+
   .info-columns .thumbnail img {
     max-width: 400px;
   }
+
+  .caption {
+    margin: 20px 150px 45px;
+    p {
+      margin: 10px 10px 35px;
+    }
+  }
+
+  .cups {
+    .flexbox-cups {
+      width: 70%;
+    }
+  }
+
+
 }
 
-@media only screen and (min-width : 768px) {
-  .hero-text {
-    top: 60%;
-    left: 80%;
-    transform: translateX(-75%) translateY(-75%);
-    width: 280px;
-    font-size: 22px;
+@media only screen and (min-width: 768px) {
+  .info-columns-wrapper {
+    background-color: pink;
+    background-image: url("http://localhost/idovintage/wp-content/uploads/2017/04/4Asset-1-80.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .no-padding {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .caption {
-    margin: 20px 0 45px;
+    margin: 0;
+    padding: 1px;
+    background-color: #fff;
     p {
-      margin: 10px 15px 35px;
+          margin: 10px 10px 20px
     }
+  }
+
+  .row-padding {
+    padding: 40px 40px 30px;
+  }
+
+  .info-row-padding {
+    padding: 0 30px 75px;
+  }
+
+  .thumbnail, .wp-caption {
+      margin-bottom: 0;
+  }
+
+  .info-columns-header {
+    display: inline;
+  }
+
+  .info-column-max-width {
+    max-width: 360px;
+  }
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+  .section-header {
+    font-size: 18px;
   }
 
 }
