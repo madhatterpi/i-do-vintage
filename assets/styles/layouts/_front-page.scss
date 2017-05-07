@@ -14,10 +14,10 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     color: #46774F;
-    font-size: 5.4vw;
     width: 100%;
     p {
       margin: 0 0 2px;
+      font-size: 1.7em;
     }
   }
 }
@@ -29,8 +29,7 @@
     width: 95%;
     div {
       flex: auto;
-      width: 100%;
-      margin: .5vw;
+      max-width: 330px;
     }
     img {
       width: 100%;
@@ -40,17 +39,22 @@
 }
 
 .no-padding {
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
 }
 
 .section-header {
-  font-size: 16px;
+  font-size: 1.0625em;
+  //font-family: 'Josefin Slab', serif;
 }
 
 .info-header {
   padding-top: 40px;
   margin: 0 0 35px;
+  color: #fff;
 }
 
 .info-columns-header {
@@ -61,10 +65,6 @@
 .info-row-padding {
   padding-top: 35px;
 }
-
-/* .info-column-max-width {
-  max-width: 400px;
-} */
 
 .info-columns {
   .thumbnail {
@@ -79,12 +79,12 @@
 }
 
 .caption {
-  margin: 30px 20px 45px;
+  margin: 30px 20px 40px;
   h2 {
-    font-size: 22px;
+    font-size: 1.625em;
   }
   p {
-    margin: 15px 15px 35px;
+    margin: 15px;
     color: #575757;
     line-height: 1.7;
   }
@@ -107,58 +107,62 @@
   background-position: center;
   background-size: cover;
   color: white;
-  height: 180px;
-  position: relative;
 }
 
 .testamonial-text {
-  width: 70%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
+  padding: 3em 2em;
+  line-height: 1.7;
+  p {
+    font-size: 1.0625em;
+    margin: 10px 0 10px;
 
-.testamonial-name {
-  font-size: 12px;
-}
-
-.testamonial-background {
-  background-color: #FCC9C9;
-  height: 300px;
+  }
+  .testamonial-name {
+    font-size: 0.875em;
+  }
 }
 
 .break {
   background-image: url("http://localhost/idovintage/wp-content/uploads/2017/04/4Asset-1-80.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   height: 50px;
+  background-color: pink;
+}
+
+.read-more {
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
 }
 
 
+
 /* === Media Queries === */
-
-
 @media only screen and (min-width: 640px) {
   .hero {
     .hero-text {
       top: 60%;
       left: 80%;
       transform: translateX(-75%) translateY(-75%);
-      width: 36%;
-      font-size: 2.8vw;
+      width: 40%;
+      font-size: 1.3em;
+      p {
+        font-size: 1.4em;
+      }
     }
   }
 
-  .info-columns .thumbnail img {
-    max-width: 400px;
-  }
-
   .caption {
-    margin: 20px 150px 45px;
+    margin: 20px 150px 40px;
     p {
-      margin: 10px 10px 35px;
+      margin: 10px 10px 20px;
+      font-size: 1.0625em;
     }
   }
 
@@ -167,17 +171,50 @@
       width: 70%;
     }
   }
+}
 
-
+@media only screen and (min-width: 360px) {
+  .section-header {
+    font-size: 1.125em;
+  }
+  .caption {
+    p {
+      font-size: 1.125em;
+    }
+  }
+  .hero {
+    .hero-text p {
+      font-size: 1.9em;
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) {
+
+  .hero {
+    .hero-text {
+      width: 40%;
+      font-size: 1.4em;
+    }
+  }
+
   .info-columns-wrapper {
-    background-color: pink;
-    background-image: url("http://localhost/idovintage/wp-content/uploads/2017/04/4Asset-1-80.jpg");
+    background-color: $brand-primary;
+    //background-image: url("http://localhost/idovintage/wp-content/uploads/2017/04/4Asset-1-80.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  .info-column-max-width {
+    max-width: 315px;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* inline-block space fix */
+    margin-right:-4px;
   }
 
   .no-padding {
@@ -187,15 +224,15 @@
 
   .caption {
     margin: 0;
-    padding: 1px;
+    padding: 10px;
     background-color: #fff;
     p {
-          margin: 10px 10px 20px
+      margin: 10px;
     }
   }
 
   .row-padding {
-    padding: 40px 40px 30px;
+    padding: 50px 40px 60px;
   }
 
   .info-row-padding {
@@ -211,15 +248,93 @@
   }
 
   .info-column-max-width {
-    max-width: 360px;
+    //box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  }
+
+  .testamonial-text {
+    padding: 4em 5em;
   }
 }
 
-
-
 @media only screen and (min-width: 1024px) {
-  .section-header {
-    font-size: 18px;
+
+  .hero {
+    .hero-text {
+      width: 40%;
+      font-size: 2em;
+    }
   }
 
+  .section-header {
+    font-size: 24px;
+  }
+
+  .caption {
+    .read-more {
+      font-size: 1.230em;
+    }
+  }
+
+  .testamonial {
+    .testamonial-text {
+        padding: 6em 5em;
+      p {
+        font-size: 22px;
+      }
+      .testamonial-name {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .break {
+    height: 100px;
+  }
+
+  .info-header {
+    padding-top: 60px;
+    margin: 0 0 40px;
+  }
+
+  .info-row-padding {
+    padding: 0 80px 110px
+  }
+
+  .read-more {
+    text-decoration: underline;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1260px) {
+  .info-row-padding {
+    padding: 0px;
+  }
+
+  .info-column-max-width {
+    max-width: 380px;
+  }
+
+  .info-row-padding {
+    padding: 0 0 110px
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .info-column-max-width {
+    max-width: 380px;
+    margin: 0.6%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .hero .hero-text {
+    font-size: 2.2em;
+  }
+}
+
+@media only screen and (min-width: 1680px) {
+  .hero .hero-text {
+    font-size: 2.4em;
+  }
 }
