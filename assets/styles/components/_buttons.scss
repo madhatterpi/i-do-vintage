@@ -4,24 +4,46 @@
   color: #fff;
   border: 1px solid #fff;
   margin-top: 20px;
-  padding: 7px 18px;
+  padding: 10px 26px;
+  font-family: 'Lato';
+  opacity: 0.7;
+  transition: 1s;
+  -webkit-transform: translateZ(0);
+}
+
+.btn:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 640px) {
+  .btn-collection {
+
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .btn-collection {
-    font-size: 16px;
+
+  }
+}
+
+@media only screen and (min-width: 1260px) {
+  .btn-collection {
+
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .btn-collection {
-    font-size: 18px;
+    border-radius: 30px;
+    padding: 14px 34px;
+    font-size: 16px;
   }
 }
 
 @media only screen and (min-width: 1680px) {
   .btn-collection {
-    font-size: 19px;
     margin-top: 25px;
   }
 }

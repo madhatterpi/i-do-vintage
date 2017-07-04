@@ -1,37 +1,109 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans+Condensed:300');
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700|Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Rouge+Script');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Nunito:300,400,600|Lato|Crimson+Text|Raleway|La+Belle+Aurore|Josefin+Sans|Oswald');
+
+@font-face {
+  font-family: 'MinionProRegular';
+  src: url('../fonts/MinionProRegular/MinionProRegular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/proxima-nova.otf');
+  font-weight: normal;
+  font-style: normal;
+}
 
 html, body {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
+  color: $grey;
+}
+
+.section-header {
+  font-family: 'Lora';
+  text-transform: capitalize;
+}
+
+.hero-text {
+  font-family: 'Lora';
 }
 
 .page-header {
   margin: 30px 0 20px;
 }
 
+.no-padding {
+  padding: 0;
+  margin: 0 14px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.top-page-text {
+  margin: 20px 15px;
+}
+
+.row-std {
+  padding: 22.5px 0;
+}
+
+// center bootstrap column
+.col-centered-margin {
+    float: none;
+    margin: 0 auto;
+}
+
+// page main margins
 .page-template-default .main-ido {
   margin: 0.5em 0.5em;
 }
 
-.top-page-text {
-  padding: 0 5px 0;
+.row-margin-bottom {
+  margin-bottom: 40px;
+}
+
+.row-padding-bottom {
+  padding-bottom: 40px;
+}
+
+.row-padding-top {
+  padding-top: 10px;
 }
 
 @media only screen and (min-width: 768px) {
   .page-template-default .main-ido {
     margin: 0.5em 2em;
   }
+  .top-page-text {
+    margin: 25px;
+  }
 }
 
 @media only screen and (min-width: 1220px) {
   .page-template-default .main-ido {
-    margin: 0.5em 2em;
+    margin: 0 auto;
+    width: 1000px;
   }
-
 }
 
-.row-padding {
-  padding-top: 35px;
+@media only screen and (min-width: 1366px) {
+  .page-template-default .main-ido {
+    margin: 0 auto;
+    width: 1200px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .page-template-default .main-ido {
+    margin: 0 auto;
+    width: 1300px;
+  }
 }
 
 .flexbox-center {
@@ -41,7 +113,7 @@ html, body {
 }
 
 a {
-  color: #000;
+  color: $grey;
 }
 
 a:focus, a:hover {

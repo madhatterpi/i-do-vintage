@@ -19,8 +19,14 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/header');
     ?>
     <div class="wrap container-ido" role="document">
-      <div class="content row-ido">
+      <div class="content">
+
+        <?php if (! is_front_page() && has_post_thumbnail()) : ?>
+          <?php get_template_part('templates/hero-image'); ?>
+          <?php endif; ?>
+
         <main class="main-ido">
+
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
         <?php if (Setup\display_sidebar()) : ?>

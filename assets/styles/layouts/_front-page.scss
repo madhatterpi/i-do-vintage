@@ -2,6 +2,7 @@
   position: relative;
   text-align: center;
   overflow: hidden;
+  max-height: 560px;
   img {
     opacity: 0.8;
     width: 100%;
@@ -13,13 +14,28 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    color: #46774F;
     width: 100%;
+    font-size: 22px;
     p {
       margin: 0 0 2px;
-      font-size: 1.7em;
     }
   }
+}
+
+.about-text-container {
+  padding-top: 45px;
+  text-align: center;
+}
+
+.about-text {
+  width: 85%;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.about-large-text {
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 .cups {
@@ -38,32 +54,41 @@
   }
 }
 
-.no-padding {
-  padding: 0;
+.cups {
+  .flexbox-cups {
+    div:nth-child(1) {
+      padding-top: 7px;
+    }
+  }
 }
 
-.no-margin {
-  margin: 0;
+.cups {
+  .flexbox-cups {
+    div:nth-child(3) {
+      padding-top: 5px;
+    }
+  }
 }
 
 .section-header {
-  font-size: 1.0625em;
-  //font-family: 'Josefin Slab', serif;
+  font-size: 21px;
+  margin-bottom: 22px;
+}
+
+.info-column {
+  max-width: 350px;
+  padding: 0;
+  margin: 0 14px;
 }
 
 .info-header {
-  padding-top: 40px;
-  margin: 0 0 35px;
-  color: #fff;
+  padding-top: 50px;
+  margin: 0 0 50px;
 }
 
 .info-columns-header {
   text-align: center;
   display: none;
-}
-
-.info-row-padding {
-  padding-top: 35px;
 }
 
 .info-columns {
@@ -79,14 +104,19 @@
 }
 
 .caption {
-  margin: 30px 20px 40px;
+  margin: 35px 20px 40px;
+  font-size: 15px;
   h2 {
-    font-size: 1.625em;
+    font-family: 'Lora', serif;
+    font-size: 1.438em;
+    margin-bottom: 0.6em;
   }
   p {
-    margin: 15px;
-    color: #575757;
+    margin: 15px 0;
     line-height: 1.7;
+  }
+  .read-more {
+    text-transform: uppercase;
   }
 }
 
@@ -106,137 +136,176 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: white;
+  color: #f9f9f9;
 }
 
 .testamonial-text {
+  font-family: 'La Belle Aurore';
   padding: 3em 2em;
   line-height: 1.7;
   p {
-    font-size: 1.0625em;
-    margin: 10px 0 10px;
-
+    font-size: 28px;
+     margin: 0 0 15px;
   }
   .testamonial-name {
-    font-size: 0.875em;
+    font-size: 20px;
+    margin: 0;
   }
 }
 
-.break {
+/*.break {
   background-image: url("http://localhost/idovintage/wp-content/uploads/2017/04/4Asset-1-80.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 50px;
   background-color: pink;
-}
+} */
 
 .read-more {
-  text-decoration: underline;
+  text-decoration: none;
   margin-bottom: 20px;
+  margin-top: 5px;
 }
 
-/* centered columns styles */
 .row-centered {
-    text-align:center;
+    text-align: center;
 }
 
+.info-columns {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
+.bottom-break {
+  text-align: center;
+  padding: 55px 0 45px;
+  p {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .front-social-links-bottom {
+    img {
+      padding: 20px;
+      max-width: 80px;
+    }
+  }
+}
 
 /* === Media Queries === */
+@media only screen and (min-width: 360px) {
+  .hero {
+    .hero-text {
+      font-size: 25px;
+    }
+  }
+}
+
+@media only screen and (min-width: 568px) {
+  .info-columns {
+    width: 65%;
+    margin: 0 auto;
+  }
+  .section-header {
+    font-size: 1.500em;
+  }
+  .cups {
+    .flexbox-cups {
+      width: 80%;
+    }
+  }
+}
+
 @media only screen and (min-width: 640px) {
   .hero {
     .hero-text {
       top: 60%;
       left: 80%;
       transform: translateX(-75%) translateY(-75%);
-      width: 40%;
-      font-size: 1.3em;
-      p {
-        font-size: 1.4em;
-      }
-    }
-  }
-
-  .caption {
-    margin: 20px 150px 40px;
-    p {
-      margin: 10px 10px 20px;
-      font-size: 1.0625em;
-    }
-  }
-
-  .cups {
-    .flexbox-cups {
-      width: 70%;
-    }
-  }
-}
-
-@media only screen and (min-width: 360px) {
-  .section-header {
-    font-size: 1.125em;
-  }
-  .caption {
-    p {
-      font-size: 1.125em;
-    }
-  }
-  .hero {
-    .hero-text p {
-      font-size: 1.9em;
+      width: 50%;
+      padding-top: 4em;
     }
   }
 }
 
 @media only screen and (min-width: 768px) {
-
+  .logo-banner {
+        margin-top: 22px;
+  }
+  .navbar-default .navbar-brand {
+    font-size: 40px;
+}
   .hero {
     .hero-text {
-      width: 40%;
-      font-size: 1.4em;
+      padding-top: 2em;
+      font-size: 28px;
     }
   }
 
+  .about-text-container {
+    background-color: #fff;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    text-align: center;
+  }
+
+  .about-text {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .about-large-text {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .section-header {
+    font-size: 24px;
+  }
+
+  .info-header {
+    padding-top: 55px;
+  }
+
   .info-columns-wrapper {
-    background-color: $brand-primary;
+    background-color: $light-grey;
     //background-image: url("http://localhost/idovintage/wp-content/uploads/2017/04/4Asset-1-80.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
-  .info-column-max-width {
-    max-width: 315px;
-}
-
-.col-centered {
-    display:inline-block;
-    float:none;
-    /* inline-block space fix */
-    margin-right:-4px;
+  .info-columns {
+    flex-direction: row;
+    width: 100%;
   }
 
-  .no-padding {
-    padding-left: 10px;
-    padding-right: 10px;
+  .info-column {
+    margin: 0 10px;
+    width: 30%;
   }
 
   .caption {
     margin: 0;
     padding: 10px;
-    background-color: #fff;
+    background-color: white;
+    min-height: 240px;
     p {
-      margin: 10px;
+      margin: 15px 5px;
     }
   }
 
   .row-padding {
-    padding: 50px 40px 60px;
+    padding: 55px 40px 45px;
   }
 
   .info-row-padding {
-    padding: 0 30px 75px;
+    padding: 0 5px 120px;
   }
 
   .thumbnail, .wp-caption {
@@ -245,10 +314,6 @@
 
   .info-columns-header {
     display: inline;
-  }
-
-  .info-column-max-width {
-    //box-shadow: 0 3px 6px rgba(0,0,0,.25);
   }
 
   .testamonial-text {
@@ -260,81 +325,154 @@
 
   .hero {
     .hero-text {
-      width: 40%;
-      font-size: 2em;
+      width: 45%;
+      font-size: 34px;
+    }
+  }
+
+  .hero {
+    .hero-text {
+      transform: translateX(-68%) translateY(-75%);
     }
   }
 
   .section-header {
-    font-size: 24px;
+    font-size: 28px;
+  }
+
+  .cups {
+    .flexbox-cups {
+      div:nth-child(1) {
+        padding-top: 16px;
+      }
+    }
+  }
+
+  .cups {
+    .flexbox-cups {
+      div:nth-child(3) {
+        padding-top: 15px;
+      }
+    }
   }
 
   .caption {
     .read-more {
-      font-size: 1.230em;
+      font-size: 15px;
     }
   }
 
-  .testamonial {
-    .testamonial-text {
-        padding: 6em 5em;
-      p {
-        font-size: 22px;
-      }
-      .testamonial-name {
-        font-size: 15px;
-      }
-    }
-  }
-
-  .break {
+  /*.break {
     height: 100px;
-  }
+  }*/
 
   .info-header {
-    padding-top: 60px;
-    margin: 0 0 40px;
+    padding-top: 80px;
+    margin: 0 0 70px;
   }
 
-  .info-row-padding {
-    padding: 0 80px 110px
+  .info-column {
+    margin: 0 15px;
   }
 
-  .read-more {
-    text-decoration: underline;
-    margin-bottom: 20px;
+  .row-padding {
+    padding: 80px 40px 70px;
+  }
+
+  .testamonial-text {
+    p {
+      font-size: 34px;
+    }
+    .testamonial-name {
+      font-size: 26px;
+    }
+  }
+
+  .bottom-break {
+    padding: 80px 0 70px;
+    .front-social-links-bottom {
+      img {
+        max-width: 90px;
+      }
   }
 }
 
-@media only screen and (min-width: 1260px) {
-  .info-row-padding {
-    padding: 0px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .caption {
+    font-size: 16px;
   }
 
-  .info-column-max-width {
-    max-width: 380px;
+  .info-column {
+    margin: 0 24px;
   }
 
-  .info-row-padding {
-    padding: 0 0 110px
+  .testamonial-text {
+    padding: 6em 8em;
+    p {
+      font-size: 34px;
+    }
+    .testamonial-name {
+      font-size: 26px;
+    }
   }
 }
 
 @media only screen and (min-width: 1440px) {
+  .hero .hero-text  {
+
+  }
+  .about-text {
+    width: 65%;
+  }
+  .info-row-padding {
+    padding: 0 30px 110px
+  }
+
+  .testamonial {
+    .testamonial-text {
+        padding: 6em 14em;
+      p {
+        font-size: 36px;
+      }
+      .testamonial-name {
+        font-size: 28px;
+      }
+    }
+  }
   .info-column-max-width {
     max-width: 380px;
-    margin: 0.6%;
   }
 }
 
-@media only screen and (min-width: 1600px) {
-  .hero .hero-text {
-    font-size: 2.2em;
+@media only screen and (min-width: 1550px) {
+  .hero .hero-text p {
+    font-size: 44px;
+  }
+  .info-column {
+    min-width: 360px;
+  }
+  .about-text {
+    width: 50%;
   }
 }
 
 @media only screen and (min-width: 1680px) {
-  .hero .hero-text {
-    font-size: 2.4em;
+  .hero .hero-text p {
+    font-size: 48px;
   }
+
+  .testamonial {
+    .testamonial-text {
+        padding: 6em 26em;
+      p {
+        font-size: 40px;
+      }
+      .testamonial-name {
+        font-size: 30px;
+      }
+    }
+  }
+
 }

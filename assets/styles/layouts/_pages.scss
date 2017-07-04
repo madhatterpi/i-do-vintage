@@ -1,11 +1,11 @@
 // gallery page
 
-// envira gallery
+//envira gallery
 .envira-gallery-wrap .envira-gallery-public .envira-gallery-item img {
-   transition: all .3s ease-in-out;
+   transition: all .3s ease-in-out !important;
 }
 .envira-gallery-wrap .envira-gallery-public .envira-gallery-item:hover img {
-   transform: scale(1.1);
+   transform: scale(1.05);
 }
 .envira-gallery-wrap .envira-gallery-public .envira-gallery-item,
 .envira-gallery-wrap .envira-gallery-public .envira-gallery-item .envira-gallery-item-inner {
@@ -21,6 +21,32 @@
 
   }
 
+  .envira-gallery-wrap {
+    // margin: 25px auto 20px auto !important;
+}
+
+.top-page-text {
+  text-align: center;
+  font-size: 18px;
+  padding: 15px 0 0;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.hr-gallery {
+  padding-bottom: 20px;
+  margin: 15px 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .top-page-text {
+    padding: 40px 0 10px;
+  }
+
+  .hr-gallery {
+    margin: 20px 50px;
+  }
+}
   // contact page
   .contact-form-container {
     width: 100%;
