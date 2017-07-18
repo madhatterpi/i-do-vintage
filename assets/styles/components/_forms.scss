@@ -19,6 +19,10 @@ div.wpcf7 {
   font-size: 17px;
 }
 
+.wpcf7-form {
+  margin: 5px;
+}
+
 .wpcf7 label {
     font-weight: 400;
     width: 100%;
@@ -180,7 +184,7 @@ span.wpcf7-not-valid-tip {
 
 @media only screen and (min-width: 768px) {
   div.wpcf7 {
-    padding: 25px 15px;
+    padding: 25px 0;
   }
 
   .wpcf7 input[type="text"],

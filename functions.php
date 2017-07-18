@@ -16,7 +16,7 @@ $sage_includes = [
   'lib/titles.php',    // Page titles
   'lib/wrapper.php',   // Theme wrapper class
   'lib/customizer.php', // Theme customizer
-  'lib/nav-walker.php', // Bootstrap navwalker 
+  'lib/nav-walker.php', // Bootstrap navwalker
 ];
 
 foreach ($sage_includes as $file) {
@@ -27,3 +27,6 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+//remove wordpress topbar
+add_filter('show_admin_bar', '__return_false');

@@ -12,12 +12,12 @@
 
 <div class="hero">
   <picture>
-    <source srcset="http://localhost/idovintage/wp-content/uploads/2017/05/hero-lgx3.jpg" media="(min-width: 1600px)">
-    <source srcset="http://localhost/idovintage/wp-content/uploads/2017/04/hero-lgx2.jpg" media="(min-width: 1480px)">
-    <source srcset="http://localhost/idovintage/wp-content/uploads/2017/04/hero-lg.jpg" media="(min-width: 960px)">
-    <source srcset="http://localhost/idovintage/wp-content/uploads/2017/04/hero-tab.jpg" media="(min-width: 640px)">
+    <source srcset="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/hero-front-page/hero-lgx3.jpg" media="(min-width: 1600px)">
+    <source srcset="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/hero-front-page/hero-lgx2.jpg" media="(min-width: 1480px)">
+    <source srcset="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/hero-front-page/hero-lg.jpg" media="(min-width: 960px)">
+    <source srcset="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/hero-front-page/hero-tab.jpg" media="(min-width: 640px)">
 
-    <img src="http://localhost/idovintage/wp-content/uploads/2017/04/hero-sm-1.jpg" alt="tea cup">
+    <img src="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/hero-front-page/hero-sm.jpg" alt="tea cup">
 
   </picture>
 
@@ -40,12 +40,12 @@
 
 <div class="info-columns-wrapper">
   <div class="info-columns-header">
-    <p class="section-header info-header">Any occassion can be vintage-ified</p>
+    <p class="section-header info-header">Lets Make your event special</p>
   </div>
 <div class="row-std row-centered info-row-padding text-center info-columns">
   <div class="col-sm-4 col-md-4 col-lg 4 info-column">
     <div class="thumbnail">
-      <img src="http://localhost/idovintage/wp-content/uploads/2017/04/cups-pricing-sm.jpg" alt="">
+      <img src="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/info-columns/cups-pricing-sm.jpg" alt="">
     </div>
     <div class="caption">
       <h2 class="caption-header">Pricing</h2>
@@ -55,7 +55,7 @@
   </div>
   <div class="col-sm-4 col-md-4 col-lg 4 info-column">
     <div class="thumbnail">
-      <img src="http://localhost/idovintage/wp-content/uploads/2017/04/cups-delivery-sm.jpg" alt="">
+      <img src="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/info-columns/cups-delivery-sm.jpg" alt="">
     </div>
     <div class="caption">
       <h2 class="caption-header">Delivery</h2>
@@ -65,7 +65,7 @@
   </div>
   <div class="col-sm-4 col-md-4 col-lg 4 info-column">
     <div class="thumbnail">
-      <img src="http://localhost/idovintage/wp-content/uploads/2017/04/cups-contact-sm.jpg" alt="">
+      <img src="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/info-columns/cups-contact-sm.jpg" alt="">
     </div>
     <div class="caption">
       <h2>Contact</h2>
@@ -79,9 +79,9 @@
 <div class="row-std row-padding text-center flexbox-center cups">
   <p class="section-header">A few of our favourite cups</p>
   <div class="flexbox-cups">
-    <div><img src="http://localhost/idovintage/wp-content/uploads/2017/04/cup1.jpg" alt=""></div>
-    <div><img src="http://localhost/idovintage/wp-content/uploads/2017/04/cup-3.jpg" alt=""></div>
-    <div><img src="http://localhost/idovintage/wp-content/uploads/2017/04/cup-2.jpg" alt=""></div>
+    <div><img src="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/cups-front-page/cup1.jpg" alt=""></div>
+    <div><img src="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/cups-front-page/cup3.jpg" alt=""></div>
+    <div><img src="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/cups-front-page/cup2.jpg" alt=""></div>
   </div>
 </div>
 
@@ -96,10 +96,11 @@
 </div>
 
   <div class="row-std break bottom-break">
-    <p>Danish oat cake tiramisu. Marshmallow tart cupcake bonbon caramels jelly cheesecake cookie. Dragée cake oat cake macaroon.</p>
+    <p class="section-header">Follow us on social media</p>
+    <hr class="hr-front">
     <div class="front-social-links-bottom">
-      <img src="http://localhost/idovintage/wp-content/uploads/2017/05/facebook-icon-orange.png">
-      <img src="http://localhost/idovintage/wp-content/uploads/2017/05/instagram-orange.png">
+      <a class="hideme" href="https://www.facebook.com/idovintagehire/"><img src="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/social-icons/facebook-icon-orange.png"></a>
+      <a class="hideme" href="https://www.instagram.com/greendreamsandyoga/"><img src="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/social-icons/instagram-orange.png"></a>
     </div>
   </div>
 

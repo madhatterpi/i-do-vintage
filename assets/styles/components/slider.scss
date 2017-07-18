@@ -1,0 +1,99 @@
+.soliloquy-container {
+  background-image: url("http://localhost/idovintage/wp-content/themes/idovintage/assets/images/quote-background/quote-background.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  font-family: 'La Belle Aurore';
+}
+
+//remove max height
+#soliloquy-container-285 {
+  max-height: 500px !important;
+}
+
+// hide arrows and dots
+.soliloquy-container .soliloquy-next {
+  display: none !important;
+}
+
+.soliloquy-container .soliloquy-prev {
+  display: none !important;
+}
+
+.soliloquy-container .soliloquy-pager {
+  display: none !important;
+} // hide arrows and dots
+
+.soliloquy-container .soliloquy-caption-inside {
+  font-size: 28px !important;
+  padding: 2em 1em!important;
+  position: relative !important;
+}
+
+.soliloquy-container .soliloquy-caption {
+  background: none !important;
+  position: relative !important;
+  padding-bottom: 0 !important;
+}
+
+.soliloquy-container .soliloquy-image {
+  display: none !important;
+}
+
+.soliloquy-container .name {
+  font-size: 20px;
+}
+
+.soliloquy-container p {
+  margin: 0 0 15px;
+  line-height: 1.7 !important;
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .soliloquy-container .soliloquy-caption {
+     display: block !important;
+   }
+ }
+
+ @media only screen and (min-width: 768px) {
+   .soliloquy-container .soliloquy-caption-inside {
+     padding: 2.5em 2em!important;
+   }
+ }
+
+ @media only screen and (min-width: 1024px) {
+   .soliloquy-container .soliloquy-caption-inside {
+     font-size: 34px !important;
+   }
+
+   .soliloquy-container .name {
+     font-size: 26px;
+   }
+ }
+
+ @media only screen and (min-width: 1280px) {
+   .soliloquy-container .soliloquy-caption-inside {
+     padding: 6em 8em;
+   }
+ }
+
+ @media only screen and (min-width: 1440px) {
+   .soliloquy-container .soliloquy-caption-inside {
+     padding: 6em 14em;
+     font-size: 36px !important;
+   }
+   .soliloquy-container .name {
+     font-size: 28px;
+   }
+ }
+
+ @media only screen and (min-width: 1680px) {
+   .soliloquy-container .soliloquy-caption-inside {
+     padding: 3.5em 10em !important;
+     font-size: 40px !important;
+   }
+   .soliloquy-container .name {
+     font-size: 30px;
+   }
+ }

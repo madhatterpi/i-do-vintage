@@ -1,21 +1,8 @@
 // fonts
-@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700|Open+Sans+Condensed:300');
-@import url('https://fonts.googleapis.com/css?family=Rouge+Script');
-@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Nunito:300,400,600|Lato|Crimson+Text|Raleway|La+Belle+Aurore|Josefin+Sans|Oswald');
-
-@font-face {
-  font-family: 'MinionProRegular';
-  src: url('../fonts/MinionProRegular/MinionProRegular.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ProximaNova';
-  src: url('../fonts/proxima-nova.otf');
-  font-weight: normal;
-  font-style: normal;
-}
+//@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700|Open+Sans+Condensed:300');
+//@import url('https://fonts.googleapis.com/css?family=Rouge+Script|Crimson+Text|Raleway||Josefin+Sans|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700,400i,700i|Nunito:300,400,600|Lato|Parisienne|La+Belle+Aurore');
+@import url('https://fonts.googleapis.com/css?family=Allura|Great+Vibes|Parisienne|Rouge+Script');
 
 html, body {
   font-family: 'Nunito', sans-serif;
@@ -74,6 +61,36 @@ html, body {
 
 .row-padding-top {
   padding-top: 10px;
+}
+
+// slider
+.slider {
+    width: 720px;
+    height: 400px;
+    overflow: hidden;
+    background-color: grey;
+    color: #fff;
+}
+
+.slider .slides {
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+.slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 720px;
+    height: 400px;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.slider .slide p {
+  padding: 0 20px;
 }
 
 @media only screen and (min-width: 768px) {
