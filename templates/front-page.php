@@ -58,9 +58,9 @@
       <img src="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/info-columns/cups-delivery-sm.jpg" alt="">
     </div>
     <div class="caption">
-      <h2 class="caption-header">Delivery</h2>
+      <h2 class="caption-header">Collection</h2>
       <p class="caption-text">Chocolate bar pie dessert dragée caramels. Icing pie ice cream jelly-o halvah marshmallow marzipan jelly. Biscuit carrot cake chocolate cake tootsie roll sweet roll. Fruitcake. </p>
-      <p class="read-more"><a href="http://localhost:3000/idovintage/delivery/">Read More</a></p>
+      <p class="read-more"><a href="http://localhost:3000/idovintage/gallery/">Read More</a></p>
     </div>
   </div>
   <div class="col-sm-4 col-md-4 col-lg 4 info-column">
@@ -86,21 +86,15 @@
 </div>
 
 <div class="my-row">
-  <div class="testamonial text-center">
-      <div class="testamonial-text">
-        <p>"Everybody loved the tea with vintage china. The service was very proffessional and
-        we will definitely use them again. You're the best."</p>
-        <p class="testamonial-name">Sarah Lorrie</p>
-      </div>
-    </div>
+  <?php if ( function_exists( 'soliloquy' ) ) { soliloquy( '285' ); } ?>
 </div>
 
   <div class="row-std break bottom-break">
     <p class="section-header">Follow us on social media</p>
     <hr class="hr-front">
     <div class="front-social-links-bottom">
-      <a class="hideme" href="https://www.facebook.com/idovintagehire/"><img src="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/social-icons/facebook-icon-orange.png"></a>
-      <a class="hideme" href="https://www.instagram.com/greendreamsandyoga/"><img src="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/social-icons/instagram-orange.png"></a>
+      <a class="hideme" href="https://www.facebook.com/idovintagehire/"><img src="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/social-icons/facebook-icon-orange.jpg"></a>
+      <a class="hideme" href="https://www.instagram.com/greendreamsandyoga/"><img src="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/social-icons/instagram-orange.jpg"></a>
     </div>
   </div>
 

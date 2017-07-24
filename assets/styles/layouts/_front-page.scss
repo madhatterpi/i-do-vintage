@@ -131,8 +131,8 @@
     transition: border .2s ease-in-out;
 }
 
-.testamonial {
-  background-image: url("http://localhost/idovintage/wp-content/themes/idovintage/assets/images/quote-background/quote-background.jpg");
+.my-row {
+  background-image: url("http://localhost/idovintage/wp-content/themes/idovintage/assets/images/quote-background/quote-background-green.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -152,15 +152,6 @@
     margin: 0;
   }
 }
-
-/*.break {
-  background-image: url("http://localhost/idovintage/wp-content/uploads/2017/04/4Asset-1-80.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 50px;
-  background-color: pink;
-} */
 
 .read-more {
   text-decoration: none;
@@ -195,10 +186,9 @@
     img {
       padding: 5px 20px 20px;
       max-width: 80px;
-      opacity: 0.8;
     }
     img:hover {
-      opacity: 1;
+      opacity: 0.8;
     }
   }
 }
@@ -501,7 +491,7 @@
 
   .testamonial {
     .testamonial-text {
-        padding: 6em 26em !important;
+        padding: 6em 26em;
       p {
         font-size: 40px;
       }

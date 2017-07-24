@@ -16,7 +16,7 @@ height: auto !important;
   padding-right: 95px;
   margin-top: 10px;
   img {
-    width: 25px;
+    width: 22px;
     margin-left: 10px;
     opacity: 0.3;
   }
@@ -211,6 +211,11 @@ height: auto !important;
     font-size: 17px;
   }
 
+  .navbar .container {
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+
   .nav>li {
     margin: 3px 10px;
   }
@@ -238,10 +243,16 @@ height: auto !important;
 @media only screen and (min-width:1440px) {
   .navbar .container {
     width: 86%;
+    margin-top: 25px;
+    margin-bottom: 40px;
   }
 
   .navbar-default .navbar-brand {
     font-size: 70px;
+  }
+
+  .logo-banner img {
+    width: 25px;
   }
 
 }

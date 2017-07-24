@@ -84,61 +84,6 @@ div.wpcf7 {
   outline: 0;
 }
 
-.social-icons {
-  margin-left: 4px;
-}
-
-.social-links {
-  //margin-left: 25px;
-  display: flex;
-  flex-direction: column;
-  h3 {
-    font-size: 40px;
-  }
-  img {
-    width: 35px;
-    margin-right: 8px;
-  }
-}
-
-.social-links-header {
-  font-size: 40px;
-}
-
-.social-item {
-  margin-top: 16px;
-  p:nth-child(1) {
-    color: #ffbd89;
-    font-size: 21px;
-    margin-bottom: 0;
-  }
-}
-
-.social-media-container {
-  display: flex;
-  flex-direction: row;
-  img {
-    margin: 10px 15px 0 4px;
-    width: 40px;
-    height: 40px;
-  }
-  img:hover {
-    opacity: 0.8;
-  }
-}
-
-.social-media {
-  margin-top: 30px;
-}
-
-.contact {
-  font-size: 17px;
-}
-
-.contact .container-ido {
-  background-color: #f9f9f9;
-}
-
 // error messages
 div.wpcf7-response-output {
     margin: 0;
@@ -161,26 +106,7 @@ span.wpcf7-not-valid-tip {
     color: #fd4848;
   }
 
-// media queries
-@media only screen and (min-width: 500px) {
-  .social-links {
-    //margin-left: 100px;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    flex-direction: row;
-  }
 
-  .social-media {
-    margin-top: 0;
-    flex-grow: 1;
-  }
-
-  .social-icons {
-    flex-grow: 1;
-  }
-
-}
 
 @media only screen and (min-width: 768px) {
   div.wpcf7 {
@@ -204,23 +130,9 @@ span.wpcf7-not-valid-tip {
   .contact-form-p {
     text-align: left;
   }
-
-  .social-links {
-    margin-left: 80px;
-  }
 }
 
-@media only screen and (min-width: 1024px) {
-  .social-links {
-    flex-direction: column;
-    padding-top: 30px;
-    margin-left: 40px;
-  }
 
-  .social-media {
-    padding-top: 20px;
-  }
-}
 
 @media only screen and (min-width: 1440px) {
   div.wpcf7 {
