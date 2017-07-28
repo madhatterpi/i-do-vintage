@@ -15,17 +15,23 @@ height: auto !important;
   justify-content: flex-end;
   padding-right: 95px;
   margin-top: 10px;
-  img {
-    width: 22px;
+  a {
     margin-left: 10px;
-    opacity: 0.3;
-  }
-  img:hover {
-    opacity: 0.5;
   }
 }
 
+.fa-top-header {
+  font-size: 26px;
+  color: #babbba;
+}
 
+.fa-top-header:hover {
+  color: #808080;
+}
+
+.navbar-toggle {
+  border: none;
+}
 
 .caption-banner-wrapper {
   // center div
@@ -254,5 +260,10 @@ height: auto !important;
   .logo-banner img {
     width: 25px;
   }
+}
 
+@media only screen and (min-width:1600px) {
+  .nav>li {
+    margin: 3px 26px;
+  }
 }

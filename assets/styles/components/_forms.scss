@@ -48,7 +48,7 @@ div.wpcf7 {
     padding: 10px;
     width: 100%;
     border-radius: 1px;
-    border: 2px dashed #ffbd89;
+    border: 2px dashed $orange;
     margin-top: 5px;
 }
 
@@ -71,7 +71,7 @@ div.wpcf7 {
 }
 
 .wpcf7-submit:hover {
-  opacity: 0.8;
+  background-color: #fbb8b8;
 }
 
 .wpcf7-submit:active {

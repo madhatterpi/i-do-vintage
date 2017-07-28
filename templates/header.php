@@ -5,10 +5,8 @@
 
 <header class="banner navbar navbar-default navbar-static-top" role="banner">
   <div class="logo-banner">
-    <a href="https://www.facebook.com/idovintagehire/"><img src="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/social-icons/facebook-logo.jpg" alt=""></a>
-    <a href="//localhost:3000/idovintage/wp-content/themes/idovintage/assets/images/social-icons/instagram-orange.png"><img src="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/social-icons/instgram-logo.jpg" alt=""></a>
-    <!-- <a href="#"><img src="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/social-icons/twitter-logo.png" alt=""></a> -->
-    <!-- <p class="header-phone">01865 881341</p> -->
+    <a href="https://www.facebook.com/idovintagehire/"><i class="fa fa-facebook-square fa-top-header" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/idovintagehire/"><i class="fa fa-instagram fa-top-header" aria-hidden="true"></i></a>
   </div>
   <div class="container">
     <div class="navbar-header">

@@ -36,8 +36,6 @@
   </div>
 </div>
 
-
-
 <div class="info-columns-wrapper">
   <div class="info-columns-header">
     <p class="section-header info-header">Lets Make your event special</p>
@@ -93,8 +91,8 @@
     <p class="section-header">Follow us on social media</p>
     <hr class="hr-front">
     <div class="front-social-links-bottom">
-      <a class="hideme" href="https://www.facebook.com/idovintagehire/"><img src="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/social-icons/facebook-icon-orange.jpg"></a>
-      <a class="hideme" href="https://www.instagram.com/greendreamsandyoga/"><img src="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/social-icons/instagram-orange.jpg"></a>
+      <a class="hideme" href="https://www.facebook.com/idovintagehire/"><i class="fa fa-facebook-square fa-front-page" aria-hidden="true"></i></a>
+      <a class="hideme" href="https://www.instagram.com/idovintagehire/"><i class="fa fa-instagram fa-front-page" aria-hidden="true"></i></a>
     </div>
   </div>
 

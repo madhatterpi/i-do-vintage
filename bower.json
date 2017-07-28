@@ -7,9 +7,16 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "font-awesome": "fontawesome#^4.7.0",
     "bootstrap-sass": "3.3.6"
   },
   "overrides": {
+    "font-awesome": {
+      "main": [
+        "./scss/font-awesome.scss",
+        "./fonts/*"
+      ]
+    },
     "bootstrap-sass": {
       "main": [
         "./assets/stylesheets/_bootstrap.scss",

@@ -10,10 +10,18 @@
 }
 
 /* Hide Title */
-.envira-gallery-item-inner .envira-title { opacity: 0 !important; }
+.envira-gallery-item-inner .envira-title {
+  opacity: 0 !important;
+  visibility: hidden !important;
+ }
 /* Show Title when hovering over gallery image */
 .envira-gallery-item-inner:hover .envira-title { opacity: 0; }
 
   .envira-gallery-wrap {
     // margin: 25px auto 20px auto !important;
+}
+
+// hide title in lightbox
+.overlay-base_dark .envirabox-wrap .envirabox-title {
+  visibility: hidden !important;
 }

@@ -4,6 +4,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700,400i,700i|Nunito:300,400,600|Lato|Parisienne|La+Belle+Aurore');
 @import url('https://fonts.googleapis.com/css?family=Allura|Great+Vibes|Parisienne|Rouge+Script');
 
+.fa {
+  color: $orange;
+}
+
+.fa:hover {
+  color: #ffb377;
+}
+
 html, body {
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
