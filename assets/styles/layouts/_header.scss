@@ -1,15 +1,3 @@
-.featured-thumbnail img {
-max-width: 100%;
-height: auto !important;
-}
-
-.featured-image-wrapper {
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  opacity: 0.8;
-}
-
 .logo-banner {
   display: none;
   justify-content: flex-end;
@@ -18,51 +6,17 @@ height: auto !important;
   a {
     margin-left: 10px;
   }
-}
-
-.fa-top-header {
-  font-size: 26px;
-  color: #babbba;
-}
-
-.fa-top-header:hover {
-  color: #808080;
+  .fa-top-header {
+    font-size: 26px;
+  }
 }
 
 .navbar-toggle {
   border: none;
 }
 
-.caption-banner-wrapper {
-  // center div
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  // style
-  padding: 2.25em 5em;
-  background: rgba(255,255,255,0.65);
-  text-align: center;
-  color: $darkgrey;
-  .caption-banner {
-    text-transform: uppercase;
-    font-size: 3.4em;
-    font-family: 'Lato', sans-serif;
-  }
-  .caption-banner-description {
-    font-size: 1.2em;
-  }
-}
-
 .navbar-header {
   margin: 15px 0;
-}
-
-.navbar-header {
-    vertical-align: middle;
-    p {
-      display: none;
-    }
 }
 
 .navbar {
@@ -70,47 +24,51 @@ height: auto !important;
   color: #fff;
   margin-bottom: 0px;
   border: none;
+  font-family: 'Lora', serif;
+  text-align: center;
+  border-bottom: 1px solid #bfbfbf;
 }
 
 .navbar-default .navbar-brand {
   color: $orange;
   font-family: 'Parisienne', serif;
-  font-size: 37px;
+  font-size: 32px;
+  letter-spacing: .06rem;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-  //background-color: #fff;
-}
-
-.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text {
-  color: $header;
-  height: 45px;
-}
-
-.menu-primary-container {
+.navbar-default .navbar-nav>li>a {
+  color: $grey;
+  text-transform: uppercase;
+  transition: 0.2s;
   font-size: 16px;
-}
-
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-  color: $orange;
-}
-
-.navbar-nav>li>a:focus {
-
+  letter-spacing: .1rem;
+  padding: 0;
 }
 
 .nav>li {
-  margin: 3px 6px;
+  margin: 0 0 35px;
+  &:first-of-type {
+    margin: 35px 0;
+  }
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: lighten($grey, 38%);
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+  color: lighten($grey, 38%);
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-  border-color: $orange;
+  border-color: #bfbfbf;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   background-color: inherit;
-  color: $orange;
 }
+
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
   background-color: inherit;
@@ -121,31 +79,19 @@ height: auto !important;
     height: 3px;
   }
 
-.navbar-default {
-  text-align: center;
-}
-
-.navbar-nav>li>a {
-    text-align: center;
-}
-
-.navbar-nav>li>a:hover {
-    //border-bottom: 2px solid $header-green;
-}
-
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-}
-
-.navbar .navbar-collapse {
-  text-align: center;
-}
-
 // remove hover colour
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
     color: $orange;
+}
+
+.navbar-brand {
+  float: left;
+}
+
+@media only screen and (min-width: 360px) {
+  .navbar-default .navbar-brand {
+    font-size: 36px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -153,9 +99,23 @@ height: auto !important;
     display: flex;
   }
 
-  .navbar-brand {
-    float: none;
-    padding: 0;
+  #menu-primary .active a {
+    padding-bottom: 5px;
+    position: relative;
+  }
+
+  #menu-primary .active a::after {
+    border-bottom: 1px solid #969897;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 35%;
+    transform: translateX(-50%);
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    font-size: 14px;
   }
 
   .navbar-header {
@@ -166,10 +126,6 @@ height: auto !important;
     // margin-top: 40px; normal
     margin-top: 15px; // for social-icons
     margin-bottom: 30px;
-  }
-
-  .nav>li>a {
-    padding: 10px;
   }
 
   .navbar-default .navbar-brand {
@@ -186,21 +142,6 @@ height: auto !important;
     margin-left: 0;
   }
 
-  .navbar-header {
-    margin-top: 10px;
-      p {
-        margin-top: 8px;
-        text-transform: uppercase;
-        margin-bottom: 5px;
-        font-size: 13px;
-        display: block;
-      }
-  }
-
-  .navbar-default .navbar-nav>li>a, .navbar-default .navbar-text {
-    height: 50px;
-  }
-
   .navbar-nav.navbar-center, .navbar-header-center {
     margin-left: 50%;
     transform: translateX(-50%);
@@ -208,13 +149,53 @@ height: auto !important;
 
 }
 
+// collapse navbar at...
+@media (max-width: 1023px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+  .navbar-brand {
+    padding: 15px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 50px;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .navbar-default .navbar-brand {
-    font-size: 60px;
-  }
-
-  .menu-primary-container {
-    font-size: 17px;
+    font-size: 56px;
   }
 
   .navbar .container {
@@ -222,35 +203,42 @@ height: auto !important;
     margin-bottom: 35px;
   }
 
+  .navbar-brand {
+    padding: 0;
+  }
+
   .nav>li {
-    margin: 3px 10px;
+      margin:  10px 40px 10px 0;
+      &:first-of-type {
+        margin: 10px 40px 10px 0;
+      }
+      &:last-of-type {
+        margin: 10px 0 10px 0;
+      }
   }
 
 }
-
 
 @media only screen and (min-width: 1280px) {
   .logo-banner {
     margin-top: 10px;
   }
+
   .caption-banner-wrapper {
     padding: 2.25em 7em;
   }
 
-  .menu-primary-container {
-    font-size: 18px;
+  .navbar-default .navbar-nav>li>a {
+    font-size: 16px;
   }
 
-  .nav>li {
-    margin: 3px 18px;
-  }
 }
 
 @media only screen and (min-width:1440px) {
   .navbar .container {
     width: 86%;
-    margin-top: 25px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 35px;
   }
 
   .navbar-default .navbar-brand {
@@ -263,7 +251,7 @@ height: auto !important;
 }
 
 @media only screen and (min-width:1600px) {
-  .nav>li {
-    margin: 3px 26px;
+  .nav>li>a {
+    padding: 3px 26px;
   }
 }

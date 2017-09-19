@@ -3,10 +3,10 @@
 ?>
 
 
-<header class="banner navbar navbar-default navbar-static-top" role="banner">
+<header class="banner navbar navbar-default navbar-fixed-top" role="banner">
   <div class="logo-banner">
-    <a href="https://www.facebook.com/idovintagehire/"><i class="fa fa-facebook-square fa-top-header" aria-hidden="true"></i></a>
-    <a href="https://www.instagram.com/idovintagehire/"><i class="fa fa-instagram fa-top-header" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/idovintagehire/"><i class="fa fa-facebook-square fa-top-header fa-grey" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/idovintagehire/"><i class="fa fa-instagram fa-top-header fa-grey" aria-hidden="true"></i></a>
   </div>
   <div class="container">
     <div class="navbar-header">
@@ -16,7 +16,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+      <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><img src="http://localhost/idovintage/wp-content/themes/idovintage/assets/images/logo/Idologo.png" alt="I Do Vintage Logo"></a>
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">

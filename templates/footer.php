@@ -1,20 +1,17 @@
 <footer class="content-info footer">
-  <div class="container">
-    <?php dynamic_sidebar('sidebar-footer'); ?>
-    <div class="row text-center footer-nav">
-      <?php
-      if (has_nav_menu('primary_navigation')) :
-        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav']);
-      endif;
-      ?>
-    </div>
-    <div class="row text-center footer-contact">
-      <p class="footer-address">Cassington, Whitney, Oxfordshire, OX29</p>
+   <!-- <div class="footer__row text-center footer__contact">
+     <p class="footer-address">Cassington, Whitney, Oxfordshire, OX29</p>
+     <a href="mailto:someone@example.com?Subject=Hello%20again">jaime-johnson@gmail.com</a>
+  </div> -->
 
-    </div>
-    <div class="row text-center">
-      <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
-      <p class="footer-copyright">&copy <?php echo date("Y")?>- Web Design by <a href="www.peterbateman.co.uk">Peter Bateman</a></p>
-    </div>
+  <div class="footer__bottom">
+     <div class="footer__bottom__copyright">
+       <p class="footer-copyright">Web Design by <a href="www.peterbateman.co.uk">Peter Bateman</a> | I Do Vintage &copy <?php echo date("Y")?></p>
+     </div>
+     <div class="footer__bottom__icons">
+       <a href="https://www.facebook.com/idovintagehire/"><i class="fa fa-facebook-square fa-top-header fa-grey" aria-hidden="true"></i></a>
+       <a href="https://www.instagram.com/idovintagehire/"><i class="fa fa-instagram fa-top-header fa-grey" aria-hidden="true"></i></a>
+     </div>
   </div>
+  <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 </footer>

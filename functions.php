@@ -9,6 +9,18 @@
  *
  * @link https://github.com/roots/sage/pull/1042
  */
+
+
+
+ function add_google_fonts() {
+
+ wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Lora|Nunito|Parisienne|La+Belle+Aurore', false );
+
+ }
+
+ add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
+
+
 $sage_includes = [
   'lib/assets.php',    // Scripts and stylesheets
   'lib/extras.php',    // Custom functions

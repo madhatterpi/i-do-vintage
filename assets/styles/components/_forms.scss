@@ -29,7 +29,7 @@ div.wpcf7 {
   }
 
 .contact-form-header {
-  font-size: 48px;
+  font-size: 44px;
   margin-left: -4px;
   text-align: center;
 }
@@ -71,7 +71,7 @@ div.wpcf7 {
 }
 
 .wpcf7-submit:hover {
-  background-color: #fbb8b8;
+  background-color: darken($brand-primary, 2%);
 }
 
 .wpcf7-submit:active {

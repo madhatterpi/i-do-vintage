@@ -1,26 +1,56 @@
 // fonts
-//@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700|Open+Sans+Condensed:300');
-//@import url('https://fonts.googleapis.com/css?family=Rouge+Script|Crimson+Text|Raleway||Josefin+Sans|Oswald');
-@import url('https://fonts.googleapis.com/css?family=Lora:400,700,400i,700i|Nunito:300,400,600|Lato|Parisienne|La+Belle+Aurore');
-@import url('https://fonts.googleapis.com/css?family=Allura|Great+Vibes|Parisienne|Rouge+Script');
-
-.fa {
-  color: $orange;
-}
-
-.fa:hover {
-  color: #ffb377;
-}
+// @import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700|Open+Sans+Condensed:300');
+// @import url('https://fonts.googleapis.com/css?family=Rouge+Script|Crimson+Text|Raleway||Josefin+Sans|Oswald');
+//@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Nunito:300,400,600|Lato|Parisienne|La+Belle+Aurore');
+// @import url('https://fonts.googleapis.com/css?family=Allura|Great+Vibes|Parisienne|Rouge+Script|Amatic+SC:400,700');
 
 html, body {
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
   color: $grey;
+  letter-spacing: 0.025rem;
+}
+
+body {
+  padding-top: 81px;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    padding-top: 138px;
+  }
+}
+
+// limit body width for high def screens
+@media only screen and (min-width: 1920px) {
+  body {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
 }
 
 .section-header {
+  font-size: 21px;
+  margin-bottom: 40px;
+  padding-bottom: 16px;
+  position: relative;
   font-family: 'Lora';
-  text-transform: capitalize;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.section-header--border::after {
+  border-bottom: 1px solid #969897;
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  top: 100%;
+  width: 100px;
+}
+
+.section-header--lg {
+  font-size: 28px;
 }
 
 .hero-text {
@@ -55,9 +85,12 @@ html, body {
 }
 
 // page main margins
-.page-template-default .main-ido {
+ .padded-container {
   margin: 0.5em 0.5em;
 }
+ .main-ido {
+   margin: 0;
+ }
 
 .row-margin-bottom {
   margin-bottom: 40px;
@@ -71,9 +104,31 @@ html, body {
   padding-top: 10px;
 }
 
+// icons
+
+.fa {
+  color: $orange;
+}
+
+.fa:hover {
+  color: darken($orange, 3%);
+}
+
+.fa-grey {
+  color: $icon-grey;
+}
+
+.fa-grey:hover {
+  color: lighten($icon-grey, 10%);
+}
+
 @media only screen and (min-width: 768px) {
-  .page-template-default .main-ido {
+   .padded-container {
     margin: 0.5em 2em;
+  }
+  .main-ido {
+    margin: 0;
+    width: 100%;
   }
   .top-page-text {
     margin: 25px;
@@ -81,23 +136,35 @@ html, body {
 }
 
 @media only screen and (min-width: 1220px) {
-  .page-template-default .main-ido {
+   .padded-container {
     margin: 0 auto;
     width: 1000px;
+  }
+  .main-ido {
+    margin: 0;
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 1366px) {
-  .page-template-default .main-ido {
+   .padded-container {
     margin: 0 auto;
     width: 1200px;
+  }
+  .main-ido {
+    margin: 0;
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .page-template-default .main-ido {
+   .padded-container {
     margin: 0 auto;
-    width: 1300px;
+    width: 1200px;
+  }
+  .home .main-ido {
+    margin: 0;
+    width: 100%;
   }
 }
 
@@ -112,5 +179,5 @@ a {
 }
 
 a:focus, a:hover {
-    color: #19703e;
+    color: #525453;
 }

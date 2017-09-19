@@ -1,0 +1,18 @@
+.contact-section {
+    padding: 70px 50px 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact-section-icons {
+  margin: 25px 20px 20px;
+  a {
+    margin-right: 14px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contact-section {
+    padding: 80px 50px 60px;
+  }
+}
